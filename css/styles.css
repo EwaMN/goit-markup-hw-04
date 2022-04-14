@@ -12,6 +12,7 @@
     --background-color:#E5E5E5;
     --background-color2:#F5F4FA;
     --borderline: #EEEEEE;
+    --mainfill:#AFB1B8;
 }
 body {
     font-family: var(--main-font);
@@ -72,7 +73,6 @@ section {
 .navigation-list {
     display:flex;
     align-items: center;
-    
 }
 
 /* =====WEBSTUDIO===== */
@@ -80,7 +80,6 @@ section {
     padding-top: 24px;
     padding-bottom:25px;
     margin-right:93px;
-    
     color:var(--main-color);
 }
 .navigation-logo {
@@ -107,13 +106,11 @@ section {
     margin-right: 46px;
 }
 
-
 .mailto {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.333;
     letter-spacing: 0.02em;
-    
     margin-left:345px;
     color:var(--fourth-color);
 }
@@ -132,7 +129,6 @@ section {
     letter-spacing: 0.02em;
     color: var(--main-color);
     margin-left:30px;
-    
 }
 
 .telephone:hover,
@@ -160,7 +156,7 @@ section {
 /* ==== MAIN ==== */
 .title {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-     url(/images/imgmainpic.jpg);
+     url(./images/imgmainpic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -179,8 +175,6 @@ section {
     margin-left: auto;
     margin-right:auto;
     margin-top:106px;
-    
-    
 }
 
 .modal-button {
@@ -275,7 +269,6 @@ section {
     background-color: var(--background-color2);
 }
 .team .container {
-    
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -321,8 +314,7 @@ section {
     padding-left: 32px;
     padding-right: 32px;
 }
-.social-link:not(:last-child)
-{
+.social-link:not(:last-child){
     margin-right:10px;
 }
 .social-link-item {
@@ -333,7 +325,7 @@ section {
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    fill: #AFB1B8;
+    fill: var(--mainfill);
 }
 .social-icon {
     width: 20px;
@@ -360,14 +352,20 @@ section {
 .clients-logo-item {
     width:170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--mainfill);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.clients-logo-item:hover,
+.clients-logo-item:focus {
+    border-color: var(--secondary-color);
+}
 /* ==== end MAIN ==== */
 /* ==== FOOTER ==== */
+
 .footer {
     background: var(--fifth-color);
     
@@ -375,11 +373,15 @@ section {
 .footer .container{
     padding-top: 60px;
     padding-bottom: 60px;  
-    
     display: flex;
-    
 }
-
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.paragraph-list-item-footer:not(:last-child) {
+    margin-right:70px;
+}
 .footer .navigation-logo {
     color:var(--seventh-color);
 }
@@ -414,8 +416,46 @@ section {
 .footer-phone:focus {
     color: var(--secondary-color);
 }
-footer div div {
-    display: block;
+.footer-contact {
+    display: flex;
+    font:var(--main-font);
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+/*ikony footer*/
+/* ikony workes*/
+.social-media-footer {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.social-media-footer:not(:last-child) {
+    margin-right:10px;
+}
+.social-link-item-footer {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color:rgba(255, 255, 255, 0.1);;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: var(--third-color);
+}
+.social-icon-footer {
+    width: 20px;
+    height: 20px;
+}
+
+.social-link-item-footer:hover,
+.social-link-item-footer:focus {
+    background-color: var(--secondary-color);
+    
+}
+
+.social-link-item:not(:last-child) {
+    margin-right:10px;
 }
 
 /* ==== end FOOTER ==== */
@@ -430,9 +470,7 @@ footer div div {
 .menu-buttons .container {
     display:flex;
     padding-left: 380px;
-    align-items: center;
-    
-    
+    align-items: center; 
 }
 .menu-button {
     font-weight: 500;
@@ -440,15 +478,14 @@ footer div div {
     line-height: 2.166;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: var(--seventh-color);
-    
     border-radius: 4px;
+    border-color: var(--background-color2);
     margin-right: 8px;
 }
 
 .menu-button:hover,
-.menu-button:focus,
-.menu-button:active {
+.menu-button:focus
+{
     background-color: var(--secondary-color);
     color: var(--third-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
