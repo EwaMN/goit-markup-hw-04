@@ -156,7 +156,7 @@ section {
 /* ==== MAIN ==== */
 .title {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
-     url(./images/imgmainpic.jpg);
+     url(/images/imgmainpic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
