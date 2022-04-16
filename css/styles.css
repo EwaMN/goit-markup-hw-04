@@ -430,9 +430,7 @@ section {
     justify-content: space-between;
     
 }
-.social-media-footer:not(:last-child) {
-    margin-right:10px;
-}
+
 .social-link-item-footer {
     display: flex;
     width: 44px;
@@ -447,16 +445,14 @@ section {
     width: 20px;
     height: 20px;
 }
-
+.social-link-item-footer {
+    margin-right:10px;
+}
 .social-link-item-footer:hover,
 .social-link-item-footer:focus {
     background-color: var(--secondary-color);
-    
 }
 
-.social-link-item:not(:last-child) {
-    margin-right:10px;
-}
 
 /* ==== end FOOTER ==== */
 /* === buttons ==== */
